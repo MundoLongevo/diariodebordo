@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LONGEVIDADES – 2026 | Ricardo de Faria Barros</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bege: #faf9f6;
+      --preto: #333333;
+      --cinza: #eae7e0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.7;
+      background-color: var(--bege);
+      color: var(--preto);
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Lora', serif;
+      color: #4A6B52;
+      margin: 1.5rem 0 1rem;
+    }
+
+    p, ul {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: #D19A2E;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .header {
+      text-align: center;
+      padding: 2rem 0;
+      border-bottom: 1px solid var(--cinza);
+      margin-bottom: 2.5rem;
+    }
+
+    .header h1 {
+      font-size: 2.4rem;
+      color: #4A6B52;
+    }
+
+    .intro {
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      margin: 2rem 0;
+      border-left: 4px solid #4A6B52;
+    }
+
+    /* Roda de letras - responsivo */
+    .wheel-colorful {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 2rem 0;
+      padding: 10px 0;
+    }
+
+    .letter-ball {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      font-family: 'Lora', serif;
+      font-size: 19px;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.12);
+      transition: all 0.25s ease;
+      flex: 0 0 auto;
+    }
+
+    .letter-ball:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.18);
+    }
+
+    /* Cores vibrantes */
+    .L  { background-color: #8B4513; }
+    .O  { background-color: #D2691E; }
+    .N  { background-color: #2E8B57; }
+    .G  { background-color: #3CB371; }
+    .E1 { background-color: #DAA520; }
+    .V  { background-color: #FF8C00; }
+    .I  { background-color: #8B6D52; }
+    .D1 { background-color: #A0522D; }
+    .A  { background-color: #B22222; }
+    .D2 { background-color: #8B5A2B; }
+    .E2 { background-color: #CD853F; }
+    .S  { background-color: #5D4037; }
+
+    /* Em celulares: empilhar as letras */
+    @media (max-width: 768px) {
+      .wheel-colorful {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .letter-ball {
+        width: 68px;
+        height: 68px;
+        font-size: 22px;
+      }
+    }
+
+    /* Banner da imagem */
+    .banner-image {
+      text-align: center;
+      margin: 2.5rem 0;
+      padding: 1rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .banner-image img {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      display: block;
+    }
+
+    .legend {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.95rem;
+      color: var(--preto);
+      line-height: 1.6;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 3rem 0;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #2E8B57;
+      color: white;
+      border-radius: 30px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #8B4513;
+      text-decoration: none;
+    }
+
+    .attribution {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      color: #D19A2E;
+      font-style: italic;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--cinza);
+      text-align: center;
+      font-size: 0.95rem;
+      color: #8B4513;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>LONGEVIDADES</h1>
+    <p><em>Um ano de verbos. Uma travessia de sentido.</em></p>
+  </div>
+
+  <div class="intro">
+    <p>Este diário de bordo não foi feito para ser apenas consultado.<br>
+       <strong>Ele foi criado para ser vivido.</strong></p>
+    <p>Em 2026, cada mês traz um verbo que convida você a envelhecer de forma <strong>ativa, positiva, combativa, saudável e plena de sentido</strong>.</p>
+    <p><strong>➡️ Clique na letra correspondente a cada mês para começar sua travessia.</strong></p>
+  </div>
+
+  <h2>Sua Travessia Mensal</h2>
+  <div class="wheel-colorful">
+    <a href="janeiro.html" class="letter-ball L" title="L – LIDERAR a Própria Vida">L</a>
+    <a href="fevereiro.html" class="letter-ball O" title="O – OUSAR Romper Padrões">O</a>
+    <a href="marco.html" class="letter-ball N" title="N – NUTRIR a Alma e os Laços">N</a>
+    <a href="abril.html" class="letter-ball G" title="G – GERAR Legado e Beleza">G</a>
+    <a href="maio.html" class="letter-ball E1" title="E – EXERCITAR Corpo e Mente">E</a>
+    <a href="junho.html" class="letter-ball V" title="V – VIBRAR com Gratidão e Entusiasmo">V</a>
+    <a href="julho.html" class="letter-ball I" title="I – INSPIRAR pelo Exemplo e pela Escuta">I</a>
+    <a href="agosto.html" class="letter-ball D1" title="D – DEGUSTAR Cada Momento">D</a>
+    <a href="setembro.html" class="letter-ball A" title="A – AMAR com Profundidade e Fronteiras">A</a>
+    <a href="outubro.html" class="letter-ball D2" title="D – DOAR Atenção, afeto e recursos">D</a>
+    <a href="novembro.html" class="letter-ball E2" title="E – EVOLUIR aprender e partilhar">E</a>
+    <a href="dezembro.html" class="letter-ball S" title="S – SOCIALIZAR com Intencionalidade">S</a>
+  </div>
+
+  <div class="banner-image">
+    <img src="images/diario-longevidade-2026.png" 
+         alt="Diário da Longevidade 2026 – Um Guia para Viver com Presença">
+  </div>
+
+  <div class="legend">
+    
+  </div>
+
+  <div class="attribution">
+    Material do <strong>Mundo Longevo 2026</strong> – Psicólogo <strong>Ricardo de Faria Barros</strong>
+  </div>
+
+  <div class="footer-links">
+    <a href="sobre.html" class="btn">Sobre Ricardo</a>
+    <a href="pdf.html" class="btn">Baixar PDF</a>
+  </div>
+
+  <p style="text-align: center; font-style: italic; margin-top: 2rem;">
+    “Este diário de bordo 2026 não pede pressa. Pede presença.”<br>
+    — Ricardo de Faria Barros
+  </p>
+
+  
+</body>
+</html>

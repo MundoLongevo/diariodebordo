@@ -1,0 +1,126 @@
+/* css/style.css */
+:root {
+  --bege: #f8f3ed;
+  --terra: #a68a64;
+  --azul: #4a6b78;
+  --dourado: #c9a96e;
+  --cinza-suave: #eae7e0;
+  --branco: #ffffff;
+  --preto-suave: #333333;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lora', Georgia, serif;
+  line-height: 1.7;
+  background-color: var(--bege);
+  color: var(--preto-suave);
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  margin: 1.5rem 0 1rem;
+  color: var(--azul);
+}
+
+a {
+  color: var(--dourado);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--cinza-suave);
+  margin-bottom: 2rem;
+}
+
+.month-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  font-size: 0.9rem;
+}
+
+.month-grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+.checklist li {
+  list-style: none;
+  margin: 0.6rem 0;
+}
+
+.checklist input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+.scale {
+  display: flex;
+  gap: 4px;
+  margin: 1rem 0;
+}
+
+.scale input[type="radio"] {
+  display: none;
+}
+
+.scale label {
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--terra);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  cursor: pointer;
+  background: var(--branco);
+}
+
+.text-input {
+  width: 100%;
+  padding: 8px;
+  margin: 0.5rem 0 1rem;
+  border: 1px solid var(--cinza-suave);
+  border-radius: 4px;
+  background: var(--branco);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--dourado);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin: 1rem 0;
+  font-family: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--cinza-suave);
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--azul);
+}
